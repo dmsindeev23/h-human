@@ -7,8 +7,7 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card"
       className={cn(
-        // ✅ ВАЖНО: h-full + min-h-full позволяют карточке тянуться до высоты самой большой в ряду/контейнере
-        "bg-card text-card-foreground h-full min-h-full flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
+        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
         className
       )}
       {...props}
