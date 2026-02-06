@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 23% 95%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 155 55% 29%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 38 30% 85%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 38 30% 90%;
+    --muted-foreground: 0 0% 33%;
+    --accent: 155 55% 29%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 38 25% 80%;
+    --input: 38 25% 80%;
+    --ring: 155 55% 29%;
+    --radius: 0.5rem;
+    
+    --color-bg: #F7F5F0;
+    --color-bg-hero: #F0EBE0;
+    --color-accent: #207354;
+    --color-accent-hover: #1A5F45;
+    --color-text: #111111;
+    --color-text-secondary: #555555;
+    --color-text-tertiary: #888888;
+    --color-beige: #E7DDCC;
+    --color-beige-dark: #D4C8B8;
+    --color-white: #FFFFFF;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#F7F5F0] text-[#111111] antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-[#207354] text-white font-medium rounded-lg transition-all duration-300;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-[#1A5F45];
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(32, 115, 84, 0.25);
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-transparent border border-[#207354] text-[#207354] font-medium rounded-lg transition-all duration-300;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-[#207354] text-white;
+    transform: translateY(-2px);
+  }
+  
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-10 lg:px-16;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-serif {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+}
