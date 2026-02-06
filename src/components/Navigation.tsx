@@ -39,7 +39,7 @@ export function Navigation() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2">
               <span className="font-serif text-2xl text-text">
-                Мои инструменты
+                Нормальный такой Hr
               </span>
             </Link>
 
