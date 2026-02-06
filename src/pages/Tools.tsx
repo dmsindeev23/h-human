@@ -61,7 +61,7 @@ export function Tools() {
           {/* Tools Grid */}
           <motion.div 
             layout
-            // ✅ ВАЖНО: items-stretch растягивает элементы сетки до высоты самого высокого в ряду.
+            // ✅ ВАЖНО: items-stretch растягиваит элементы сетки до высоты самого высокого в ряду.
             // А h-full на wrapper ниже позволяет карточкам занять эту высоту.
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch"
           >
